@@ -4,7 +4,8 @@ on: [workflow_dispatch]
 jobs:
     build:
         runs-on: ubuntu-latest
-           steps:
+        steps:
+            step:
             - name: build
               run: maven clean verify
         
