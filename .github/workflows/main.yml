@@ -41,5 +41,5 @@ jobs:
               run: unzip pipeline-scan-LATEST.zip
             
             - name: Run Pipeline Scanner
-              run: java -jar pipeline-scan.jar --verbose --vid "${{secrets.VERACODE_API_ID}}" --vkey "${{secrets.VERACODE_API_KEY}}" --file "artifact/verademo.war" --fail_on_severity="Very High, High"
+              run: java -jar pipeline-scan.jar --verbose -vid '${{secrets.VERACODE_API_ID}}' -vkey '${{secrets.VERACODE_API_KEY}}' --file "artifact/verademo.war" --fail_on_severity="Very High, High"
               
