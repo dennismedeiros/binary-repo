@@ -6,7 +6,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: build
-              run: maven clean verify
+              run: echo I build
+            - name: what do we have
+              run: ls -la              
         
     pipeline-scan:
         runs-on: ubuntu-latest
