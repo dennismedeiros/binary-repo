@@ -2,8 +2,8 @@ name: Manual triggered SAST Action
 on: [workflow_dispatch]
 
 jobs:
-    runs-on: ubuntu-latest
-    steps: 
-        say-hello:
+    say-hello:
+        runs-on: ubuntu-latest
+        steps: 
             - name: Send Greeting
               run: echo "Hello"
